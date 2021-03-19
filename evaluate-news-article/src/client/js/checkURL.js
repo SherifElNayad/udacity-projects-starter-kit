@@ -8,3 +8,10 @@
     5. https://stackoverflow.com/a/5717133/6483379
     6. https://www.npmjs.com/package/valid-url
  */
+    const checkURL = function (value)
+    {
+        var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi
+        var regexp = new RegExp(expression);
+        return regexp.test(value);
+    } 
+    export  {checkURL}
