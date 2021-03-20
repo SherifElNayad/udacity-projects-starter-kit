@@ -1,6 +1,7 @@
 import handleSubmit from './js/formHandler'
 
 // TODO include your scss file here
+import './styles/style.scss'
 
 window.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('btn-submit')

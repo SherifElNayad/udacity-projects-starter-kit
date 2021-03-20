@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     entry: './src/client/index.js',
@@ -15,10 +16,14 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+                use: [MiniCssExtractPlugin.loader , "css-loader" , 'sass-loader' ]
             }
         ]
     },
+    devServer:{
+        inline: true,
+        hot: true,
+      },
     plugins: [
         new HtmlWebPackPlugin({
             template: './src/client/views/index.html',
@@ -29,7 +34,9 @@ module.exports = {
             verbose: true,
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
-        })
+        }),
+        new MiniCssExtractPlugin({ filename: '[name].scss'})
+
         // TODO: configure workbox-webpack-plugin
     ]
 }
