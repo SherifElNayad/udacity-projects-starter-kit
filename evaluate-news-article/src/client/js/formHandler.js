@@ -15,8 +15,8 @@ const post = async (url = '', data = {}) => {
     }
 }
 
-const handleSubmit = async () => {
-    
+const handleSubmit = async (event) => {
+    event.preventDefault()    
     const url = document.getElementById('article-url').value
     console.log(url)
     try{
