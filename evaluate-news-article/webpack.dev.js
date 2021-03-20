@@ -37,6 +37,5 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({ filename: '[name].scss'})
 
-        // TODO: configure workbox-webpack-plugin
     ]
 }

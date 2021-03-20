@@ -1,4 +1,3 @@
-// TODO: import the url check function
 
 const functions = require('../js/checkURL');
 
@@ -9,7 +8,6 @@ describe('Test check url functionality', () => {
     })
 
     test('Testing the checkUrl function return false for invalid url', () => {
-        // TODO: write your logic here
         expect(functions.checkURL("not a url")).toBeFalsy();
 
     })

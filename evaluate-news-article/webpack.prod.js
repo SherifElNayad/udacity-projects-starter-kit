@@ -32,7 +32,5 @@ module.exports = {
 
 
     ],
-    optimization: {
-        // TODO: Add Optimization for JS and CSS
-    }
+
 }

@@ -1,11 +1,19 @@
 form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
+    border: 10px solid #cf6363;
+    padding: 20px;
 }
 input {
-    padding: 5px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
+    padding: 10px 15px;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 80%;
+}
+section{
+    color: darkcyan;
+    background-color: darkgray;
+}
+button{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
 }
